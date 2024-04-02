@@ -45,5 +45,19 @@ public class Lesson5FinalTask {
 
         System.out.println(Arrays.toString(arrayInt));
 
+        for(int i = 0; i < arrayInt.length; i++){
+            int min;
+            for (int a = i + 1; a < arrayInt.length; a++){
+                if(arrayInt[i] > arrayInt[a]){
+                    min = arrayInt[a];
+                    arrayInt[a] = arrayInt[i];
+                    arrayInt[i] = min;
+                }
+            }
+        }
+
+        System.out.println(Arrays.toString(arrayInt));
+
+
     }
 }
