@@ -10,5 +10,6 @@ public class FinalMainClass {
 
         final String finalText2 = "finalText";
         //finalText2 = finalText2.toLowerCase();
+        System.out.println(finalText2);
     }
 }
