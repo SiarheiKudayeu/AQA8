@@ -1,6 +1,7 @@
 package lesson6.my_own_methods;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class MyArrayMethods {
     public static void arraySort(int[] array){
@@ -16,6 +17,12 @@ public class MyArrayMethods {
         }
     }
 
+    public static void arrayFill(int[] array, int low, int max){
+        for (int i = 0; i < array.length; i++){
+            array[i] = new Random().nextInt(low, max);
+        }
+    }
+
     public static int returnMinimumFromArray(int[] array){
         int minimum = array[0];
         for(int i = 0; i < array.length; i++){
@@ -24,6 +31,16 @@ public class MyArrayMethods {
             }
         }
         return minimum;
+    }
+
+    public static int returnMaximumFromArray(int[] array){
+        int maximum = array[0];
+        for(int i = 0; i < array.length; i++){
+            if(maximum < array[i]){
+                maximum = array[i];
+            }
+        }
+        return maximum;
     }
 
     public static int[] reverseSort(int[] array){
@@ -35,6 +52,7 @@ public class MyArrayMethods {
         }
         return xReverse;
     }
+
      public static String[] addElementToArray(String[] array, String element){
          String[] names3 = Arrays.copyOf(array, array.length + 1);
          names3[names3.length-1] = element;
