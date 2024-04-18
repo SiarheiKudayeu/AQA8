@@ -7,10 +7,12 @@ public class StaticMainForExample {
         /*System.out.println(ClassWithStaticBlocks.EURO);
         System.out.println(ClassWithStaticBlocks.USD);*/
 
-
-        ClassWithStaticBlocks classWithStaticBlocks = new ClassWithStaticBlocks();
+  /*      ClassWithStaticBlocks classWithStaticBlocks = new ClassWithStaticBlocks();
         classWithStaticBlocks.printCurrencies();
-        classWithStaticBlocks.printDate();
+        classWithStaticBlocks.printDate();*/
+
+        ClassWithStaticBlocks.justBe();
+        ClassWithStaticBlocks.justBe2();
 
     }
 }

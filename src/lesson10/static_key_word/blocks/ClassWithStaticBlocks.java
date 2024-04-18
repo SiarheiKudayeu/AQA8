@@ -11,6 +11,8 @@ public class ClassWithStaticBlocks {
 
     public static void justBe(){}
 
+    public static void justBe2(){}
+
     public static double getUSDFromBank(){
         return 39.5;
     }
